@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ToggleProxy2: Options</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style>
+html {
+	background-color: #fbfbfb;
+	color: #424e5a;
+	text-align: center;
+}
+input {
+	margin-left: 2em;
+	width: 20em;
+}
+button {
+	border: 0;
+	margin-top: 2em;
+	padding: 0 1.5em;
+	min-height: 30px;
+	color: white;
+	background-color: #0a84ff;
+}
+button:hover {
+	background-color: #0060df;
+}
+button:active {
+	background-color: #003eaa;
+}
+button:disabled {
+	filter: grayscale(100%);
+}
+label {
+	display: block;
+}
+		</style>
+	</head>
+	<body>
+		<main>
+			<h1>Options for <a href="/README.html">ToggleProxy2</a></h1>
+			<p>If there are multiple semicolon-separated settings,
+			the left-most setting will be used, until Firefox fails
+			to establish the connection to the proxy. In that case,
+			the next value will be used, etc.</p>
+
+			<p>The browser will automatically retry a previously
+			unresponsive proxy after 30 minutes. Additional
+			attempts will continue beginning at one hour, always
+			adding 30 minutes to the elapsed time between attempts.</p>
+
+			<p>If all proxies are down, and there was no DIRECT
+			option specified, the browser will ask if proxies
+			should be temporarily ignored, and direct connections
+			attempted. After 20 minutes, the browser will ask if
+			proxies should be retried, asking again after an
+			additional 40 minutes. Queries will continue, always
+			adding 20 minutes to the elapsed time between
+			queries.</p>
+			<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file">(Source for this explaination is MDN)</a></p>
+			<form>
+				<label for="proxy1">Proxy setting 1 (<img src="/data/noproxy.png" />):<input type="text" id="proxy1" placeholder="DIRECT 12345" /></label>
+				<label for="proxy2">Proxy setting 2 (<img src="/data/manual.png" />):<input type="text" id="proxy2" placeholder="SOCKS5 localhost:9050" /></label>
+				<label for="proxy3">Proxy setting 3 (<img src="/data/auto.png" />):<input type="text" id="proxy3" placeholder="PROXY w3proxy.netscape.com:8080; PROXY mozilla.netscape.com:8081" /></label>
+				<label for="proxy4">Proxy setting 4 (<img src="/data/system.png" />):<input type="text" id="proxy4" placeholder="PROXY w3proxy.netscape.com:8080; PROXY mozilla.netscape.com:8081; DIRECT" /></label>
+				<label for="proxy5">Proxy setting 5 (<img src="/data/url.png" />):<input type="text" id="proxy5" placeholder="PROXY w3proxy.netscape.com:8080; SOCKS socks:1080" /></label>
+				<label for="togglestate1">Toggle State One is Proxy setting: <select id="togglestate1" required="true"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+				<label for="togglestate2">Toggle State Two is Proxy setting: <select id="togglestate2" required="true"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+				<button type="submit" disabled="true">Save</button>
+			</form>
+		</main>
+		<script src="options.js"></script>
+	</body>
+</html>

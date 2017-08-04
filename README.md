@@ -1,17 +1,19 @@
 # ToggleProxy2
 
-Firefox extension for toggling between two proxy setupsat the click of a button.
-This is an addon-sdk based reimplementation of [Toggle Proxy](http://www.quirkyquipu.co.uk/firefox/)
-using the same config.
+Firefox webextension for toggling between two proxy setups at the click of a button.
+It can be considered a successor of [Toggle Proxy](http://www.quirkyquipu.co.uk/firefox/),
+but given the architecture and everything configs and co can't be taken over, so
+its just as well entirely new and unrelated, take your pick…
 
 ## Features
 
 * same look, feel and config as the original [Toggle Proxy](http://www.quirkyquipu.co.uk/firefox/)
-* an addon-sdk – not XUL – extension aka norestart, multiprocess compatible, …
+* Toggle between two proxy settings via a button click
 
 ## (Better?) Alternatives
 
-Beside the original there is a plentory of other options.
+Beside the original (which doesn't work in newer Firefox releases anymore)
+there are plentory of other options.
 
 ## So, why another one?
 
@@ -26,14 +28,13 @@ That also means you have to run a Developer/Nightly edition of Firefox as it
 isn't signed.
 
 If that wasn't discouraging enough you have to install
-[jpm](https://developer.mozilla.org/en-US/Add-ons/SDK/Tools/jpm) and
 [Pandoc](http://pandoc.org/) after which `make` will produce an xpi for you.
 
 ## License
 
 The extension is MIT (Expat) licensed.
 
-	Copyright © 2016 David Kalnischkies <david@kalnischkies.de>
+	Copyright © 2016-2017 David Kalnischkies <david@kalnischkies.de>
 
 	Permission is hereby granted, free of charge, to any person obtaining a copy of
 	this software and associated documentation files (the "Software"), to deal in
@@ -52,3 +53,6 @@ The extension is MIT (Expat) licensed.
 	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 	SOFTWARE.
+
+The original extension from which the name, icons and most of the usability is borrowed
+from was released under MPL-1.1 with the copyright: 2009 trigano <mark@quirkyquipu.co.uk>

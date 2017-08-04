@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "name": "ToggleProxy2",
+  "version": "0.0.2",
+  "description": "toggle between two proxy settings at the click of a button",
+  "developer": {
+    "name": "David Kalnischkies",
+    "url": "https://david.kalnischkies.de/"
+  },
+  "applications": {
+    "gecko": {
+      "id": "toggleproxy2@kalnischkies.de",
+      "strict_min_version": "55.0",
+      "update_url": "https://localhost:2903/does-not-exist/updates.json"
+    }
+  },
+  "permissions": [
+    "proxy",
+    "storage"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "browser_action": {
+    "default_title": "ToggleProxy2",
+    "default_icon": {
+      "96": "data/noproxy.png"
+    }
+  },
+  "options_ui": {
+    "browser_style": true,
+    "page": "pages/options.html"
+  }
+}
