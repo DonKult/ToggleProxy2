@@ -60,11 +60,7 @@ label {
 			queries.</p>
 			<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file">(Source for this explaination is MDN)</a></p>
 			<form>
-				<label for="proxy1">Proxy setting 1 (<img src="/data/noproxy.png" />):<input type="text" id="proxy1" placeholder="DIRECT 12345" /></label>
-				<label for="proxy2">Proxy setting 2 (<img src="/data/manual.png" />):<input type="text" id="proxy2" placeholder="SOCKS5 localhost:9050" /></label>
-				<label for="proxy3">Proxy setting 3 (<img src="/data/auto.png" />):<input type="text" id="proxy3" placeholder="PROXY w3proxy.netscape.com:8080; PROXY mozilla.netscape.com:8081" /></label>
-				<label for="proxy4">Proxy setting 4 (<img src="/data/system.png" />):<input type="text" id="proxy4" placeholder="PROXY w3proxy.netscape.com:8080; PROXY mozilla.netscape.com:8081; DIRECT" /></label>
-				<label for="proxy5">Proxy setting 5 (<img src="/data/url.png" />):<input type="text" id="proxy5" placeholder="PROXY w3proxy.netscape.com:8080; SOCKS socks:1080" /></label>
+				<div id="proxysets"></div>
 				<label for="togglestate1">Toggle State One is Proxy setting: <select id="togglestate1" required="true"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
 				<label for="togglestate2">Toggle State Two is Proxy setting: <select id="togglestate2" required="true"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
 				<button type="submit" disabled="true">Save</button>

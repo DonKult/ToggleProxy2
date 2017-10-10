@@ -10,7 +10,7 @@
   "applications": {
     "gecko": {
       "id": "toggleproxy2@kalnischkies.de",
-      "strict_min_version": "55.0",
+      "strict_min_version": "57.0a1",
       "update_url": "https://localhost:2903/does-not-exist/updates.json"
     }
   },
@@ -27,7 +27,8 @@
     "default_title": "ToggleProxy2",
     "default_icon": {
       "96": "data/noproxy.png"
-    }
+    },
+    "browser_style": true
   },
   "options_ui": {
     "browser_style": true,

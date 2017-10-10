@@ -1,6 +1,6 @@
 "use strict";
 
-browser.proxy.registerProxyScript('proxy.js');
+browser.proxy.register('proxy.js');
 browser.proxy.onProxyError.addListener(error => {
 	console.error(`Proxy error: ${error.message}`);
 });
