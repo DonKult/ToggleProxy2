@@ -1,2 +1,4 @@
 README.html
+manifest.json
 *.xpi
+.fuse_hidden*

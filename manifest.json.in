@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "ToggleProxy2",
-  "version": "0.0.2",
+  "version": "@@VERSION@@",
   "description": "toggle between two proxy settings at the click of a button",
   "developer": {
     "name": "David Kalnischkies",
